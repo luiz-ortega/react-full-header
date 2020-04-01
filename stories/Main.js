@@ -49,7 +49,7 @@ storiesOf('React Full Header', module)
     .add('with title, subtitle and video', () => (
         <FullHeader
             title="TDD"
-            subtitle="Curso de JS com TDD na prática."
+            subtitle="JS with TDD"
             bgColor="#EBE9EB"
             textColor="#3299BB"
             video="http://callmenick.com/_development/video/full-screen-background-video/media/demo.mp4"
