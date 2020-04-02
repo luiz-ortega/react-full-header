@@ -71,16 +71,27 @@ describe('<FullHeader />', () => {
         });
     });
 
-
     context('font', () => {
         it('should have font equal sans-serif when none is passed', () => {
             const wrapper = shallow(<FullHeader title="TDD" />);
             expect(wrapper.props().style.fontFamily).to.be.equal('sans-serif');
         });
 
-        it('should have font equal open-sans when is passed', () => {
+        it('should have font equal open-sans when passed', () => {
             const wrapper = shallow(<FullHeader title="TDD" font="open-sans" />);
             expect(wrapper.props().style.fontFamily).to.be.equal('open-sans');
+        });
+    });
+
+    context('bgImg', () => {
+        it('should have background-image equal empty when none is passed', () => {
+            const wrapper = shallow(<FullHeader />);
+            expect(wrapper.props().style.backgroundImage).to.be.equal('url()');
+        });
+
+        it('should have background-image equal bg.jpg when passed', () => {
+            const wrapper = shallow(<FullHeader bgImg="bg.jpg" />);
+            expect(wrapper.props().style.backgroundImage).to.be.equal('url(bg.jpg)');
         });
     });
 });
