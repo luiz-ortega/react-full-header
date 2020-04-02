@@ -58,4 +58,29 @@ describe('<FullHeader />', () => {
             expect(wrapper.props().style.backgroundColor).to.be.equal('#000');
         });
     });
+
+    context('textColor', () => {
+        it('should have color equal #fff when none is passed', () => {
+            const wrapper = shallow(<FullHeader title="TDD" />);
+            expect(wrapper.props().style.color).to.be.equal('#fff');
+        });
+
+        it('should have color equal #ff00 when textColor is passed', () => {
+            const wrapper = shallow(<FullHeader title="TDD" textColor="#ff00" />);
+            expect(wrapper.props().style.color).to.be.equal('#ff00');
+        });
+    });
+
+
+    context('font', () => {
+        it('should have font equal sans-serif when none is passed', () => {
+            const wrapper = shallow(<FullHeader title="TDD" />);
+            expect(wrapper.props().style.fontFamily).to.be.equal('sans-serif');
+        });
+
+        it('should have font equal open-sans when is passed', () => {
+            const wrapper = shallow(<FullHeader title="TDD" font="open-sans" />);
+            expect(wrapper.props().style.fontFamily).to.be.equal('open-sans');
+        });
+    });
 });

@@ -19,23 +19,23 @@ storiesOf('React Full Header', module)
         <FullHeader
             title="TDD"
             subtitle="JS with TDD"
-            bgColor="#329988"
+            bgColor="#3299BB"
         />
     ))
     .add('with title, subtitle, bgColor, textColor', () => (
         <FullHeader
             title="TDD"
             subtitle="JS with TDD"
-            bgColor="#329988"
-            textColor="FF9900"
+            bgColor="#3299BB"
+            textColor="#FF9900"
         />
     ))
     .add('with title, subtitle, bgColor, textColor, font', () => (
         <FullHeader
             title="TDD"
             subtitle="JS with TDD"
-            bgColor="#329988"
-            textColor="FF9900"
+            bgColor="#3299BB"
+            textColor="#FF9900"
             font="cursive"
         />
     ))
