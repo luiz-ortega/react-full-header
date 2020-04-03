@@ -51,7 +51,7 @@ storiesOf('React Full Header', module)
             title="TDD"
             subtitle="JS with TDD"
             bgColor="#EBE9EB"
-            textColor="#3299BB"
-            video="http://callmenick.com/_development/video/full-screen-background-video/media/demo.mp4"
+            textColor="#DDC5B4"
+            video="https://storage.coverr.co/videos/coverr-cat-at-breakfast-table-1585739969873?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTg1ODcxODI2fQ.X9iI5WKumifeMGeqtLHKvdzG0BtTlQXEV9uXgMVUkpk"
         />
     ));
