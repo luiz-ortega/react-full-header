@@ -23,5 +23,17 @@ const containerStyle = {
     zIndex: 2,
 };
 
-export { titleStyle, subTitleStyle, headerStyle, containerStyle }
+const videoStyle = {
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    zIndex: 1,
+    minWidth: '100%',
+    minHeight: '100%',
+    width: 'auto',
+    height: 'auto',
+    transform: 'translate(-50%, -50%)',
+};
+
+export { titleStyle, subTitleStyle, headerStyle, containerStyle, videoStyle }
 ;
